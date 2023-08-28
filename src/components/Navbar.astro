@@ -1,0 +1,29 @@
+<nav id="navbar" class="container flex justify-between items-center h-1/6 max-w-full p-6 bg-black">
+    <a href="/" class="flex my-auto w-50 items-center"><span class="my-auto w-full text-white text-lg">Wyatt Wilson Web Development</span></a>
+    <div class="hidden md:flex flex-row">
+        <a href="/portfolio" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">Portfolio</a>
+        <a href="/about" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">About</a>
+        <a href="/contact" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">Contact</a>
+    </div>
+    <button id="menu-btn" class="md:hidden px-3 py-2 bg-cyan-500 rounded-full text-white text-lg duration-500">Menu</a>
+</nav>
+<div class="md:hidden flex">
+    <div id="menu" class="flex-col items-center hidden w-screen text-center bg-cyan-500 text-white text-lg">
+        <a href="/" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Home</a>
+        <a href="/portfolio" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Portfolio</a>
+        <a href="/about" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">About</a>
+        <a href="/contact" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Contact</a>
+    </div>
+</div>
+
+
+<script is:inline>
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('flex')
+        nav.classList.toggle('hidden')
+    })
+</script>
+
