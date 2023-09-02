@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Wyatt Wilson Web Development</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/_astro/about.f4f35795.css" /></head>
+	<body>
+		<nav id="navbar" class="container flex justify-between items-center h-1/6 max-w-full p-6 bg-black">
+    <a href="/" class="flex my-auto w-50 items-center"><span class="my-auto w-full text-white text-lg">Wyatt Wilson Web Development</span></a>
+    <div class="hidden md:flex flex-row">
+        <a href="/portfolio" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">Portfolio</a>
+        <a href="/about" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">About</a>
+        <a href="/contact" class="ml-6 px-3 py-2 hover:bg-cyan-500 hover:rounded-full text-white text-lg duration-500">Contact</a>
+    </div>
+    <button id="menu-btn" class="md:hidden px-3 py-2 bg-cyan-500 rounded-full text-white text-lg duration-500">Menu
+</button></nav>
+<div class="md:hidden flex">
+    <div id="menu" class="flex-col items-center hidden w-screen text-center bg-cyan-500 text-white text-lg">
+        <a href="/" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Home</a>
+        <a href="/portfolio" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Portfolio</a>
+        <a href="/about" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">About</a>
+        <a href="/contact" class="p-6 w-full hover:bg-white hover:text-cyan-500 duration-500">Contact</a>
+    </div>
+</div>
+
+
+<script>
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('flex')
+        nav.classList.toggle('hidden')
+    })
+</script>
+		
+    <div class="container relative flex-col justify-center  max-w-full p-6">
+    <h1 class="my-12 mb-18 text-center text-5xl text-cyan-500">About Me</h1>
+    <div class="flex md:flex-row flex-col justify-center m-auto text-center md:text-left">
+        <img src="src/images/Facetune_.png" class="md:mx-12 mx-auto md:my-0 mb-6" width="320" height="320">
+        <p class="mx-auto md:mx-0 my-auto md:w-1/2 text-xl">I am a freelance web developer located in South Austin looking to make and improve websites across Austin and Houston. I am originally from Houston but have recently moved to Austin to enjoy the city and look for new oppurtunities in the computer science world. I've been programming for about 5 years now and can say that I have genuine passion for anything computer science related, whether it be making websites, building a chess engine, or building a computer from scratch. </p>
+    </div>
+</div>
+
+	</body></html>
