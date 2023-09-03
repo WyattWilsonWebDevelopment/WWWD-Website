@@ -8,6 +8,9 @@ module.exports = {
 			},
 			height: {
 				'min-1': 'min(396px, 40svw)',
+			},
+			colors: {
+				'brand-blue': '#0042f0'
 			}
 
 		},
