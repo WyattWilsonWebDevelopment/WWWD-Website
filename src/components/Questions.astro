@@ -1,4 +1,4 @@
-<div class="container relative flex md:flex-row flex-col my-16 max-w-full">
+ <div class="container relative flex md:flex-row flex-col my-16 max-w-full">
     <div class="flex flex-col p-6 md:w-3/5 bg-black text-white text-left">
         <div class="flex flex-col justify-left mx-auto my-12">
             <h1 class="py-6 pt-0 sm:text-4xl text-3xl">What do I do?</h1>
@@ -15,8 +15,42 @@
 </div>
 
 <style>
-    .bg-image {
-        background-image: url('/Crowded Coffee Shop.jpg');
-        background-size: cover;
+    .slide {
+        animation: ap ease;
+        animation-timeline: scroll(root y);
+    }
+
+    @keyframes ap {
+        0% {
+            opacity: 0;
+        }
+        15% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        65% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @media {max-width: 640px} {
+        .slide {
+            animation: none;
+        }
     }
 </style>
+
+<script is:inline>
+    entry.target.classList.toggle("slide", entry.isIntersecting);
+
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {};
+</script>

@@ -1,5 +1,5 @@
 <div class="container flex flex-row flex-wrap justify-left content-center max-w-full bg-image bg-cover">
-    <div class="relative flex flex-col content-center ml-0 p-6 md:h-[91vh] bg-gradient-to-br from-slate-700 via-slate-700/75 to-blue-700/50">
+    <div class="relative flex flex-col content-center ml-0 p-6 md:h-[91vh] bg-gradient-to-br from-slate-700 via-slate-700/75 to-blue-700/50 appear">
         <div class="relative w-full text-center my-12">
             <h1 class="overflow-hidden h-16 text-6xl text-white">Contact Info</h1>
         </div>
@@ -35,5 +35,18 @@
 <style>
     .bg-image {
         background-image: url('/Mac.jpg')
+    }
+
+    .appear {
+        animation: appear 3s ease;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 </style>
